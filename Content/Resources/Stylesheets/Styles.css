@@ -1,4 +1,6 @@
-﻿/*<meta />*/
+/*<meta />*/
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
 
 body
 {
@@ -47,19 +49,19 @@ div.layout-separator
 	border-right: 1px solid #dadada;
 }
 
-div.topic-container /*Sets padding on topics*/
+div.topic-container	/*Sets padding on topics*/
 {
 	padding: 2% 0;
 }
 
-div.sub-content 
+div.sub-content
 {
 	border-top: solid 1px #dadada;
 	margin-top: 40px;
 	padding: 25px 0;
 }
 
-div.search-results /*Sets side padding on search results*/
+div.search-results	/*Sets side padding on search results*/
 {
 	padding: 0 20%;
 }
@@ -173,15 +175,13 @@ MadCap|xref
 	text-decoration: underline;
 }
 
-
-
 MadCap|breadcrumbsProxy
 {
 	border-bottom-width: 0;
 	color: #888888;
 }
 
-a:link /*Color of hyperlinks*/
+a:link	/*Color of hyperlinks*/
 {
 	color: #45494c;
 }
@@ -246,7 +246,6 @@ div.home-page-layout > div:nth-child(2)
 	margin-left: 0%;
 	padding: 0 5% 2%;
 }
-
 
 div.home-tiles-layout	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
 {
@@ -407,7 +406,7 @@ div.home-footer
 	padding: 1% 5%;
 }
 
-@media tablet
+@media only screen and (max-width: 1279px)
 {
 	html.home-topic .body-container
 	{
@@ -434,7 +433,7 @@ div.home-footer
 	}
 }
 
-@media mobile
+@media only screen and (max-width: 767px)
 {
 	div.home-layout
 	{
@@ -500,3 +499,11 @@ div.home-footer
 		text-decoration: none;
 	}
 }
+
+img.test
+{
+	border: none;
+	max-width: 100%;
+	sizes: inherit;
+}
+
