@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultTarget
   Version="2"
   Comment="MadCap HTML5 Target"
@@ -6,10 +6,17 @@
   Destinations=""
   GlossaryTermConversion="marked"
   MasterPage="/Content/Resources/MasterPages/OtherTopics.flmsp"
-  DefaultUrl="/Content/Home.htm">
+  DefaultUrl="/Content/test.htm"
+  MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
+  MasterStylesheetOverride="false">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"
     GenerateIndexProxy="true"
     GenerateGlossaryProxy="true" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/SSH PW.fldes"
+      Publish="true" />
+  </Destinations>
 </CatapultTarget>
